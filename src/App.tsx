@@ -10,7 +10,7 @@ import {
 } from 'common/ui';
 import { ProfileOutlineMd, QuitOutlineMd } from 'common/icons';
 
-import logoSrc from 'images/logo.png';
+import logoSrc from 'assets/logo.png';
 
 import { theme } from './config/theme';
 import MainPage from './pages/main';

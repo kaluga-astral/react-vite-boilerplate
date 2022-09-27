@@ -16,7 +16,7 @@
             "position": "after"
           },
           {
-            "pattern": "images/**",
+            "pattern": "assets/**",
             "group": "internal",
             "position": "after"
           }

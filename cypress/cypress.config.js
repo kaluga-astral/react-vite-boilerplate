@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const { defineConfig } = require('cypress');
 
-const webpackConfig = require('./webpack.config.js');
+const viteConfig = require('../vite.config');
 
 module.exports = defineConfig({
   viewportWidth: 900,
@@ -16,12 +16,11 @@ module.exports = defineConfig({
   },
   component: {
     setupNodeEvents() {},
-    specPattern: 'cypress/tests/**/*.test.tsx',
-    indexHtmlFile: 'support/component-index.html',
+    specPattern: 'cypress/**/*.test.tsx',
     devServer: {
       framework: 'react',
-      bundler: 'webpack',
-      webpackConfig,
+      bundler: 'vite',
+      viteConfig,
     },
   },
 });

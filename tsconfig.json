@@ -19,10 +19,12 @@
       "common/*": [
         "./src/common/*"
       ],
-      "images/*": ["./public/images/*"],
-      "icons/*": ["./public/images/icons/*"],
       "config": ["./src/config"]
     },
+    "types": [
+      "vite/client",
+      "vite-plugin-svgr/client"
+    ]
   },
-  "include": ["./ts-modules/**/*.ts", "./src/**/*.ts", "./src/**/*.tsx", "./global.d.ts", "./*.js"]
+  "include": ["./ts-modules/**/*.ts", "./src/**/*.ts", "./src/**/*.tsx", "./global.d.ts", "./*.js", "./*.ts"]
 }
